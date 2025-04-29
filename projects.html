@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Saravana P</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">Saravana P</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="dl">Deep Learning</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="cse.jpg" alt="Competency Score Evaluator">
+                    </div>
+                    <div class="project-info">
+                        <h3>Competency Score Evaluator</h3>
+                        <div class="tech-stack">
+                            <span>TensorFlow</span>
+                            <span>NLP</span>
+                            <span>Python</span>
+                        </div>
+                        <p>Developed an AI-powered resume scoring system using TensorFlow NLP tools that analyzes and ranks resumes based on job description matching. The system evaluates qualifications, skills, and experience with 92% accuracy, significantly reducing HR screening time.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="auction.jpg" alt="Online Auction Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Online Auction Platform</h3>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <p>Built a full-stack auction platform with real-time bidding, user authentication, and payment integration. Features include bid history tracking, automated email notifications, and admin dashboard with 150+ concurrent users during testing.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="ccfd.jpg" alt="Credit Card Fraud Detection">
+                    </div>
+                    <div class="project-info">
+                        <h3>Credit Card Fraud Detection</h3>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>XGBoost</span>
+                        </div>
+                        <p>Machine learning system that detects fraudulent transactions with 99.2% accuracy using anomaly detection algorithms. Processed 100,000+ transactions from Kaggle dataset with precision-recall metrics optimized for financial use case.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="dl">
+                    <div class="project-image">
+                        <img src="dd.jpg" alt="Deception Detection">
+                    </div>
+                    <div class="project-info">
+                        <h3>Deception Detection System</h3>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>CNN</span>
+                        </div>
+                        <p>Deep learning model that analyzes micro-expressions in video to detect deception with 87% accuracy. Implemented using custom CNN architecture trained on 50,000+ labeled frames from interview recordings.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saravana P. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
